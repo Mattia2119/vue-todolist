@@ -1,5 +1,59 @@
+/*Regole Generali*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Regole Header*/
+
+header {
+    text-align: center;
+}
+
+header img {
+    max-width: 30%;
+    margin: auto;
+}
+
+/*Regole Main*/
+
+.todo_list ul {
+    list-style: none;
+    background-color: lavender;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.todo_list li {
+    border-top: 10px solid white;
+}
+
+
+.todo_list li:hover {
+    background-color: rgba(212, 203, 206, 0.945);
+    cursor: pointer;
+}
+
+.todo_list .fa-circle-xmark {
+    font-size: 15px;
+    float: right;
+    line-height: 23px;
+}
+
+.todo_list::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+
+.line-trough {
+    text-decoration: line-through;
 }
